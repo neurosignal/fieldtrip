@@ -185,6 +185,7 @@ switch lower(computer)
   case {'glnx86' 'glnxa64'}
     % linux computer
     dipoli = [dipoli '.glnx86'];
+    if isequal(getenv('USER'), 'amit3'), dipoli = '/home/amit3/tmp_dipoli_fix/dipoli.glnx86'; end % due to fieldtrip in pCloud
   case {'win32', 'win64', 'pcwin64'}
     % windows computer
     dipoli = [dipoli '.exe'];
