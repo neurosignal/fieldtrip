@@ -208,6 +208,8 @@ leadfieldopt = ft_setopt(leadfieldopt, 'backproject',    ft_getopt(cfg, 'backpro
 leadfieldopt = ft_setopt(leadfieldopt, 'normalize',      ft_getopt(cfg, 'normalize'));
 leadfieldopt = ft_setopt(leadfieldopt, 'normalizeparam', ft_getopt(cfg, 'normalizeparam'));
 leadfieldopt = ft_setopt(leadfieldopt, 'weight',         ft_getopt(cfg, 'weight'));
+leadfieldopt = ft_setopt(leadfieldopt, 'chanunit',       ft_getopt(cfg, 'chanunit'));
+leadfieldopt = ft_setopt(leadfieldopt, 'dipoleunit',     ft_getopt(cfg, 'dipoleunit'));
 
 if ft_headmodeltype(headmodel, 'openmeeg')
   
